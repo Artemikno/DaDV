@@ -105,7 +105,7 @@ Public Class Form1
             End If
             If context IsNot Nothing Then
                 buffer = context.Allocate(PictureBox1.CreateGraphics(), PictureBox1.DisplayRectangle)
-                buffer.Graphics.InterpolationMode = Drawing2D.InterpolationMode.NearestNeighbor
+                buffer.Graphics.InterpolationMode = Drawing2D.InterpolationMode.Low
                 buffer.Graphics.SmoothingMode = Drawing2D.SmoothingMode.HighSpeed
             End If
         End If
